@@ -155,15 +155,15 @@ a {
 .navbar_mobile {
     display: none;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
-    /* border: solid; */
+    border-bottom: rgb(199, 208,216) solid;
     width: 100%;
     background: rgb(18,24,31); 
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
 
-.navbar-mobile a {
+.navbar_mobile a {
     color: rgb(199, 208,216);
     text-decoration: none;
     padding-left: 30px;

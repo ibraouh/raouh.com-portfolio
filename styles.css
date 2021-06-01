@@ -37,6 +37,21 @@ p {
     line-height: 1.5
 }
 
+.main_paragraph {
+    width: 100%;
+    padding-left: 70px;
+}
+
+#portrait_image {
+    float: right;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+#separator {
+    padding-top: 50px;
+}
+
 .content_wrapper {
     padding-left: 10%;
     padding-right: 10%;
@@ -110,16 +125,14 @@ a {
     text-decoration: none; 
 }
 
-.flexcontainer {
-    display: flex;
-    width: 100%;
-    align-items: center;
+
+
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
 }
 
-.flex_item {
-    padding: 10px;
-    flex: 1 1 100px;
-}
 
 .navbar {
     padding-top: 3%;

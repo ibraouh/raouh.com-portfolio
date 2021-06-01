@@ -123,6 +123,7 @@ footer {
 a {
     color: rgb(199, 208,216);
     text-decoration: none; 
+    line-height: 2;
 }
 
 .grid_container {
@@ -195,8 +196,17 @@ footer img:hover{
     background-color: rgba(1,1,1,0%)
 }
 
+.special_wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
-@media only screen and (max-width: 870px) {
+figcaption {
+    size: .7em;
+}
+
+
+@media only screen and (max-width: 920px) {
     body{
         width: 100%;
     }
@@ -215,20 +225,25 @@ footer img:hover{
     }
 
     p {
-        width: 90%;
+        width: 100%;
     }
 
     .main_paragraph {
         padding-left: 60px;
-        width: 90%;
+        width: 500px;
     }
 
-    #portrait_image_div {
+    .main_block{
+        padding-left: 5%;
         width: 100%;
     }
 
     #portrait_image {
-        text-align: center;
+        margin-top: 0;
+        float:unset;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .main_title {
@@ -243,7 +258,6 @@ footer img:hover{
         float: right;
         margin-right: 20px;
         margin-top: 10px;
-
     }
 
     .fixed {
@@ -252,5 +266,46 @@ footer img:hover{
 
     .separator {
         display: none;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    #discord_img1 {
+        width: 450px;
+        height: 298.5006px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    #discord_img2 {
+        width: 450px;
+        height: 169.851px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .special_wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #jawaz_picture{
+        width: 450px;
+        height: 393.0657px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figcaption {
+        text-align: center;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

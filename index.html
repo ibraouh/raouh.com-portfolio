@@ -9,6 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger_btn .fa-times-circle").hide();
+
+            $(".hamburger_btn .fa-bars").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-times-circle").show();
+                $(".navbar_mobile ul").addClass("active");
+            });
+
+            $(".hamburger_btn .fa-times-circle").click(function () {
+                $(this).hide();
+                $(".hamburger_btn .fa-bars").show();
+                $(".navbar_mobile ul").removeClass("active");
+            });
+        });
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/ico" href="files/favicon.ico">
     <title>Raouh | Portfolio</title>
@@ -25,6 +44,23 @@
         </ul>
     </nav>
 
+    <nav role="navigation" class="navbar_mobile">
+
+        <div class="hamburger_btn">
+            <i class="fa fa-bars" aria-hidden="false"></i>
+            <i class="fa fa-times-circle" aria-hidden="false"></i>
+        </div>
+
+
+        <ul>
+            <li><a id="current" class="first" href="index">.hello( )</a></li>
+            <li><a href="education">.education( )</a></li>
+            <li><a href="skills">.skills( )</a></li>
+            <li><a href="mmc">.MMC_experience( )</a></li>
+            <li><a href="kgs">.KGS_Experience( )</a></li>
+        </ul>
+    </nav>
+<header>
     <div class="top_links">
         <ul id="transparent" class="contact_list">
             <ul id="transparent" class="contact_list">
@@ -43,7 +79,7 @@
             </ul>
         </ul>
     </div>
-
+</header>
     <div id="separator">
 
     </div>

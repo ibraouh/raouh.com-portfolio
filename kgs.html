@@ -8,13 +8,31 @@
     <meta name="KGS" content="This page is ibraouh's Experience with KGS during Covid-19 Pandemic.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".hamburger_btn .fa-times-circle").hide();
+    
+                $(".hamburger_btn .fa-bars").click(function () {
+                    $(this).hide();
+                    $(".hamburger_btn .fa-times-circle").show();
+                    $(".navbar_mobile ul").addClass("active");
+                });
+    
+                $(".hamburger_btn .fa-times-circle").click(function () {
+                    $(this).hide();
+                    $(".hamburger_btn .fa-bars").show();
+                    $(".navbar_mobile ul").removeClass("active");
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/ico" href="files/favicon.ico">
     <title>KGS Experience</title>
 </head>
 
 <body>
-    <header>
         <nav role="navigation" class="navbar">
             <ul>
                 <a href="index">.hello( )</a>
@@ -25,6 +43,23 @@
             </ul>
         </nav>
     
+        <nav role="navigation" class="navbar_mobile">
+
+            <div class="hamburger_btn">
+                <i class="fa fa-bars" aria-hidden="false"></i>
+                <i class="fa fa-times-circle" aria-hidden="false"></i>
+            </div>
+    
+    
+            <ul>
+                <li><a id="current" class="first" href="index">.hello( )</a></li>
+                <li><a href="education">.education( )</a></li>
+                <li><a href="skills">.skills( )</a></li>
+                <li><a href="mmc">.MMC_experience( )</a></li>
+                <li><a href="kgs">.KGS_Experience( )</a></li>
+            </ul>
+        </nav>
+    <header>
         <div class="top_links">
             <ul id="transparent" class="contact_list">
                 <ul id="transparent" class="contact_list">
@@ -47,7 +82,7 @@
 
     <div class="content_wrapper">
         <img id="kgs_logo" src="files/kgs.png" alt="Khalil Gibran School's Logo" width="149" height="70">
-        <h1 class="with_logo">Khalil Gibran School</h1>
+        <h1 id="kgs_name" class="with_logo">Khalil Gibran School</h1>
         <p>
             A state of emergency was announced in Morocco on Saturday, April 11th, which required the complete shut down
             of schools all over the country. Therefore, a classmate and I have decided to create a platform on "Discord"

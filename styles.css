@@ -230,7 +230,7 @@ figcaption {
 
     .main_paragraph {
         padding-left: 60px;
-        width: 500px;
+        width: 80%;
     }
 
     .main_block{
@@ -258,6 +258,10 @@ figcaption {
         float: right;
         margin-right: 20px;
         margin-top: 10px;
+    }
+    
+    .top_links a{
+        margin-left: 15px;
     }
 
     .fixed {
@@ -307,5 +311,35 @@ figcaption {
         width: 450px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 920px) {
+    
+    #jawaz_picture {
+        width: 450px;
+        height: 393.0657px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #discord_img1 {
+        width: 450px;
+        height: 298.5006px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    #discord_img2 {
+        width: 450px;
+        height: 169.851px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
     }
 }

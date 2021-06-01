@@ -44,8 +44,9 @@ p {
 
 #portrait_image {
     float: right;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 0px;
+    margin-right: 50px;
 }
 
 #separator {
@@ -207,6 +208,10 @@ figcaption {
 
 
 @media only screen and (max-width: 920px) {
+    #separator {
+        display: none;
+    }
+
     body{
         width: 100%;
     }
@@ -268,9 +273,6 @@ figcaption {
         display: none;
     }
 
-    .separator {
-        display: none;
-    }
 
     header {
         height: 70px;

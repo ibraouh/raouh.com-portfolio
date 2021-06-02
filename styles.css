@@ -381,29 +381,38 @@ figcaption {
 
 
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 530px) {
     
     #jawaz_picture {
-        width: 450px;
-        height: 393.0657px;
+        width: 300px;
+        height: 262px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
     #discord_img1 {
-        width: 450px;
-        height: 298.5006px;
+        width: 300px;
+        height: 199px;
         display: block;
         margin-left: auto;
         margin-right: auto; 
     }
 
     #discord_img2 {
-        width: 450px;
-        height: 169.851px;
+        width: 300px;
+        height: 113px;
         display: block;
         margin-left: auto;
         margin-right: auto; 
     }
+
+    figcaption {
+        text-align: center;
+        width: 300px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

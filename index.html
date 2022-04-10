@@ -1,131 +1,394 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Ibrahim Portfolio" content="This is a portfolio Website for Ibrahim.">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".hamburger_btn .fa-times-circle").hide();
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            $(".hamburger_btn .fa-bars").click(function () {
-                $(this).hide();
-                $(".hamburger_btn .fa-times-circle").show();
-                $(".navbar_mobile ul").addClass("active");
-            });
+	<!--Font API-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Red+Hat+Mono:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-            $(".hamburger_btn .fa-times-circle").click(function () {
-                $(this).hide();
-                $(".hamburger_btn .fa-bars").show();
-                $(".navbar_mobile ul").removeClass("active");
-            });
-        });
-    </script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/ico" href="files/favicon.ico">
-    <title>Ibrahim | Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="css/styles.css">	
+	<meta name="Personal Portfolio" content="Hi, and welcome to my personal portfolio. I am a math and computer science student at fordham university, interested in Artificial Intelligence and Machine Learning.">
+
+	<title>Portfolio</title>
 </head>
-
 <body>
-    <nav role="navigation" class="navbar">
-        <ul>
-            <a id="current" class="first" href="index">.hello( )</a>
-            <a href="education">.education( )</a>
-            <a href="skills">.skills( )</a>
-            <a href="mmc">.MMC_experience( )</a>
-            <a href="kgs">.KGS_Experience( )</a>
-        </ul>
-    </nav>
+ 
 
-    <nav role="navigation" class="navbar_mobile">
+<header class="nav">
+	<ul>
+		<a href="#about" class="one">About</a>
+		<a href="#experience" class="two">Experience</a>
+		<a href="#projects" class="three">Projects</a>
+		<a href="#other" class="four">Other</a>
+		
+		<a href="content/resume.pdf" target="_blank" rel="noopener noreferrer"><button src="content/resume.pdf" class="resume_button">Resume</button></a>
 
-        <div class="hamburger_btn">
-            <i class="fa fa-bars" aria-hidden="false"></i>
-            <i class="fa fa-times-circle" aria-hidden="false"></i>
-        </div>
+	</ul>
+</header>
 
 
-        <ul>
-            <li><a id="current" class="first" href="index">.hello( )</a></li>
-            <li><a href="education">.education( )</a></li>
-            <li><a href="skills">.skills( )</a></li>
-            <li><a href="mmc">.MMC_experience( )</a></li>
-            <li><a href="kgs">.KGS_Experience( )</a></li>
-        </ul>
-    </nav>
-    <header>
-        <div class="top_links">
-            <ul id="transparent" class="contact_list">
-                <ul id="transparent" class="contact_list">
-                    <a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
-                        <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
-                    </a>
-                    <a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
-                        <img src="files/github.png" alt="github logo" width="50" height="50">
-                    </a>
-                    <a href="mailto:ibrahimsecondary@gmail.com">
-                        <img src="files/mail.png" alt="email logo" width="50" height="50">
-                    </a>
-                    <a href="tel: +212675204495">
-                        <img src="files/call.png" alt="phone icon" width="50" height="50">
-                    </a>
-                </ul>
-            </ul>
-        </div>
-    </header>
-    <div id="separator">
+<header class="mobile_header">
 
-    </div>
+	<a href="content/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume_top"><button src="content/resume.pdf" class="resume_button">Resume</button></a>
 
-    <div class="grid_container">
-        <div id="portrait_image_div">
-            <img id="portrait_image" src="files/IbrahimRaouh.png" alt="Ibrahim's Portrait Photo" width="309"
-                height="414">
-            <!-- All the animations and stuff for the Resume link -->
-        </div>
+	<div class="top_socials">
+		<a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+			<img src="/content/svg/github.svg" alt="github logo" width="30" height="30">
+		</a>
+		
+		<a href="https://www.instagram.com/ibraouh/" target="_blank" rel="noopener noreferrer">
+			<img src="/content/svg/instagram.svg" alt="instagram logo" width="30" height="30">
+		</a>
+		
+		<a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+			<img src="/content/svg/linkedin.svg" alt="linkedin logo" width="30" height="30">
+		</a>
+	</div>
 
-        <div class="main_block">
-            <h1 class="main_title">Hi! I'm <br>Ibrahim {</h1>
-            <p class="main_paragraph">
-                I'm a Fordham University Sophomore (Class of
-                '24) majoring in Mathematics and Computer Science,
-                seeking an internship opportunity in the tech
-                industry for Summer ‘22. Interested in studies in
-                Artificial Intelligence, Robotics, and Machine
-                Learning. Experienced in Developing, Testing,
-                and Debugging Code as well as Technical
-                Problem Solving. Quick to learn and master
-                new technologies.
-            </p>
-            <h1 class="main_title">}</h1>
-        </div>
-    </div>
 
-    <footer class="fixed">
-        <ul id="transparent" class="contact_list">
-            <li><a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
-                    <img src="files/linkedin.png" alt="linkedin logo" width="50" height="50">
-                </a></li>
-            <li><a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
-                    <img src="files/github.png" alt="github logo" width="50" height="50">
-                </a></li>
-            <li><a href="mailto:ibrahimsecondary@gmail.com">
-                    <img src="files/mail.png" alt="email logo" width="50" height="50">
-                </a></li>
-            <li><a href="tel: +212675204495">
-                    <img src="files/call.png" alt="phone icon" width="50" height="50">
-                </a></li>
-        </ul>
-    </footer>
+</header>
+
+
+
+<!--Main welcome screen-->
+
+<div class="main_welcome">
+	<h4>Hi, my name is</h4>
+	<h1>Ibrahim Raouh.</h1>
+	<h1 class= "gray_h1">Math and CS Sophomore.</h1>
+	<h1></h1>
+	<p class="title_p">
+		I am a math and computer science student at Fordham University, interested in artificial intelligence and machine learning. 
+	</p>
+	<a href="blog.html"><button class="blog_button">Check Out my Blog!</button></a>
+	
+	<a href="#about">
+		<div class="scroll_down"></div>
+	</a>
+	
+	<div class="intro-grid"></div>
+
+	<div class="intro-scroll">
+		<a href="#about" class="intro-scroll-link smoothscroll">
+			Scroll For More
+		</a>
+	</div>
+
+
+	<div class="links">
+
+		<div class="contact-link">
+					<a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+						<img src="/content/svg/github.svg" alt="github logo" width="30" height="30">
+					</a>
+
+					<a href="https://www.instagram.com/ibraouh/" target="_blank" rel="noopener noreferrer">
+						<img src="/content/svg/instagram.svg" alt="instagram logo" width="30" height="30">
+					</a>
+					
+					<a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+						<img src="/content/svg/linkedin.svg" alt="linkedin logo" width="30" height="30">
+					</a>
+		</div>
+	</div>
+
+	<div class="links">
+		<div class="email-link">
+			<a href="mailto:raouh@fordham.edu">raouh@fordham.edu</a>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+	<div id="about" class = "section">
+		<div class="left">
+			<h2 class="one_h2">About Me</h2>
+			<div class="right">
+				<img id="portrait_image" src="content/img/IbrahimRaouh.png" alt="Ibrahim's Portrait Photo" width="309" height="414">
+			</div>
+			<p>
+				Hello! My name is Ibrahim, you can call me Abe. I enjoy <em class="important">programming</em> and math, sometimes <em class="important">design</em> (hence the website). I am <em class="important">Machine Learning</em> and <em class="important">Artificial Intelligence</em> enthousiast, especially after binging all the sci-fi movies that involve evil AI robots when I was a kid.<br><br>
+				Today, I am a rising <em class="important">junior at Fordham University</em> persuing a degree in Computer Science and Math, with electives in Artificial Intelligence. The courses include <em>data structures, computer algorithms, theory of computation, machine learning</em>, and others.<br><br>
+				I've also been working on my <em class="important">blog</em>, (which will be launched <em class="important">end of April 2021</em>) where I discuss all my personal projects in detail and show the process. <br><br>
+				Here is a few technologies and languages I've been working with:
+					<ul> <em>
+						<li>C++, C, Python</li>
+						<li>JavaScript (ES6+), HTML</li>
+						<li>Raspberry Pi and its modules</li>
+						<li>AWS</li>
+						<li>GPT-3 Api for ML</li>
+						<li>Docker, Git, etc...</li>
+					</ul></em>
+			</p>
+		</div>
+	</div>
+
+
+
+	<div id="experience" class = "section">
+		<h2 class="two_h2">Work Experience</h2>
+
+		
+		<div class = "tabs">
+			<div class="tabs__sidebar">
+				<button class="tabs__button" data-for-tab="1">Fordham IT</button>
+				<button class="tabs__button" data-for-tab="2">CS Society</button>
+				<button class="tabs__button" data-for-tab="3">Motorway Company</button>
+			</div>
+
+
+
+			<div class="tabs__content tabs__content--active" data-tab="1">
+				<h3 class="experience">IT Specialist <em class="important">@ Fordham IT</em></h3>
+				<h5>September 21 - Present</h5>
+				<p>
+					Part-time position at Fordham IT's help desk, in which I assist members of the Fordham community with any of their <em class="important">tech issues</em>, either in person or remotely. I've learned to<em class="important">troubleshoot</em> the various problems from the different scenarios I encountered, strengthening my skills and understanding of how the <em class="important">backend</em> works. This position also required constant interactions with IT specialists, supervisors, and other employees from different departments, thus improving my <em class="important">communication</em> skills.
+				</p>
+			</div>
+			
+			<div class="tabs__content" data-tab="2">
+				<h3>Research Director <em class="important">@ Fordham Computer Science Society</em></h3>	
+				<h5>September 21 - Present</h5>
+				<p>
+					In 2020, I was elected Research of the Forhdam Computer Science Society. I was in charge of most of <em class="important">planning</em> of weekly tech events organizaed by the eboard, and <em class="important">researching</em> the topics discussed. I was also in charge of keeping track of the club <em class="important">inventory</em> and leading a year long research project.</p>
+			</div>
+			
+			<div class="tabs__content" data-tab="3">
+				<h3>Agent and Technician <em class="important">@ Moroccan Motorway Company</em></h3>
+				<h5>June - July 2019</h5>
+				<p>
+					In the one month long internship, I was in charge of <em class="important">maintaining the hardware and software</em> used by the agents in over 12 national agencies. The position required constant <em class="important">interactions</em> with important clients, and appeasement of delicate situations between staff and clients.
+				</p>
+			</div>
+
+			
+			
+		</div>	
+	</div>
+
+
+
+	<div id="projects" class = "section">
+		<h2 class="three_h2">Some things I built</h2>
+			
+
+		<div class="row grid-container">
+			<div class="shadow feature-item">
+				<h4>Fordham PD</h4>
+				<p>Fordham People Watcher (naming is not my strongest skill) is a device that detects the capacity of a room using a raspberry Pi and multiple detectors like motion, humidity, and temperature. The readings are then posted to a website that students can use.</p>
+				<h5><a href="projects.html">More+</a></h5>
+			</div>
+
+			<div class="shadow feature-item">
+				<h4>D.A.I.S.Y.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				<h5><a href="projects.html">More+</a></h5>
+			</div>
+
+			<div class="shadow feature-item added">
+				<h4>Title 3</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				<h5><a href="projects.html">More+</a></h5>
+			</div>
+
+			<div class="shadow feature-item added">
+				<h4>Title 4</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				<h5><a href="projects.html">More+</a></h5>
+			</div>
+
+		</div>
+		<a href="projects.html"><button class="projects_button">Learn More Here +</button></a>
+
+
+
+
+
+	
+	</div>
+	
+	<div id="other" class = "section">
+		<h2 class="four_h2">Programming and Software</h2>
+			<p>
+			I enjoy programming to solve some of the common problems that I experience daily. I prefer to spend more time making automations instead of tediously doing a task. This morning, I decided to automate the process of class registration in order to avoid all the headaches of the slow overloaded server. Not only did I end up saving time, but I also got all the classes I wanted with no problem. <br><br>
+			Some Programming (or Markup) languages I like to use are:
+				<ul>
+					<li><b><em class="important">C++</em></b> (Advanced Level)</li>
+					<li><b><em class="important">Python</em></b>(Advanced Level)</li>
+					<li><b><em class="important">C</em></b> (Intermediate Level)</li>
+					<li><b><em class="important">JavaScript</em></b> (Basic Level)</li>
+					<li><b><em class="important">Java</em></b> (Basic Level)</li>
+					<li><b><em class="important">HTML</em></b> (Advanced Level)</li>
+					<li><b><em class="important">CSS</em></b> (Intermediate Level)</li>
+				</ul>
+			</p>
+
+			<p>
+			Being proficient in using multiple software is an essential skill to have, which is why I try to learn and expand my knowledge to get exposed to a more extensive set of industries. They include:
+				<b>
+				<ul>
+					<li>Adobe Professional Suite for photo and video editing and processing</li>
+					<li>Final Cut Pro for video editing</li>
+					<li>GarageBand for music production and tweaking</li>
+					<li>IDEs: VScode (Best IDE in the universe), Mars Emulator for Assembly, Thonny & BlueJ for Raspberry Pi </li>
+					<li>Apple, Google, and Microsoft text editing suites</li>
+				</ul>
+				</b>
+			</p>
+	</div>
+
+
+	<div id="blog" class = "section">
+		<h2 class="blog_title">Recent Blog Posts</h2>
+			
+
+		<div class="row grid-container-blog">
+			<div class="shadow feature-item">
+				<h4>Title Blog Post 1</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				<h5>#VSCode #CSS #HTML #Python</h5>
+				<h5><a href="blog.html">More+</a></h5>
+			</div>
+
+			<div class="shadow feature-item">
+				<h4>Title Blog Post 2</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				<h5 class="blog_tags">#VSCode #CSS #HTML #Python</h5>
+				<h5><a href="blog.html">More+</a></h5>
+			</div>
+
+			<div class="shadow feature-item added">
+				<h4>Title Blog Post 3</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<h5 >#VSCode #CSS #HTM #Python</h5>
+					<h5><a href="blog.html">More+</a></h5>
+			</div>
+			
+		</div>
+		<a href="blog.html"><button class="projects_button">Learn More Here +</button></a>
+	</div>
+	
+
+
+	<script>
+		function setupTabs () {
+			document. querySelectorAll(".tabs__button").forEach(button => {
+				button.addEventListener ("click", () => {
+					const sideBar = button.parentElement;
+					const tabsContainer = sideBar.parentElement;
+					const tabNumber = button.dataset.forTab;
+					const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`);
+			
+					sideBar.querySelectorAll(".tabs__button").forEach(button => {
+						button.classList.remove("tabs__button--active");
+					});
+					
+					tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
+						tab.classList.remove("tabs__content--active");
+					});
+
+					button.classList.add("tabs__button--active");		
+					tabToActivate.classList.add("tabs__content--active");					
+				});
+			});
+
+		}
+		document.addEventListener("DOMContentLoaded", () => {
+			setupTabs();
+
+			document.querySelectorAll(".tabs").forEach(tabsContainer => {
+				tabsContainer.querySelector(".tabs__sidebar .tabs__button").click();
+			});
+		});
+	</script>
+
+
+
+	<script>
+		$(document).ready(function () {
+			$(".hamburger_btn .fa-times-circle").hide();
+
+			$(".hamburger_btn .fa-bars").click(function () {
+				$(this).hide();
+				$(".hamburger_btn .fa-times-circle").show();
+				$(".navbar_mobile ul").addClass("active");
+			});
+
+			$(".hamburger_btn .fa-times-circle").click(function () {
+				$(this).hide();
+				$(".hamburger_btn .fa-bars").show();
+				$(".navbar_mobile ul").removeClass("active");
+			});
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="links">
+
+	<div class="contact-link">
+				<a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
+					<img src="/content/svg/github.svg" alt="github logo" width="30" height="30">
+				</a>
+
+				<a href="https://www.instagram.com/ibraouh/" target="_blank" rel="noopener noreferrer">
+					<img src="/content/svg/instagram.svg" alt="instagram logo" width="30" height="30">
+				</a>
+				
+				<a href="https://www.linkedin.com/in/iraouh/" target="_blank" rel="noopener noreferrer">
+					<img src="/content/svg/linkedin.svg" alt="linkedin logo" width="30" height="30">
+				</a>
+	</div>
+</div>
+
+<div class="links">
+	<div class="email-link">
+		<a href="mailto:raouh@fordham.edu">raouh@fordham.edu</a>
+	</div>
+</div>
+
+
+
+
+
+
+
+<footer>
+	<p>designed and developed by <a href="https://github.com/ibraouh">@ibraouh</a> | Mar 2022 |  <a href="mailto:raouh@fordham.edu">raouh@fordham.edu</a></p>	
+</footer>
 
 
 </body>
-
 </html>

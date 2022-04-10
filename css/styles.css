@@ -134,6 +134,10 @@ h5 {
   margin-top: 0;
 }
 
+#mobile {
+  display: none;
+}
+
 /* -------------------------------------------------- */
 
 .one_h2::before {
@@ -404,6 +408,8 @@ header {
   margin-top: 0;
 }
 
+
+
 /* ---------------------------------------------- */
 
 footer p {
@@ -457,125 +463,7 @@ footer a {
 
 
 /* ---------------------------------------------- */
-@media only screen and (max-width: 1400px) {
-  html {
-    margin-right: 1%;
-    margin-left: 1%;
-  }
 
-  body {
-    color: rgb(138, 146, 173);
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .links {
-    display: none;
-  }  
-
-}
-
-@media only screen and (max-width: 920px) {
-  .navbar_mobile {
-    display: block;
-  }
-
-  html {
-    margin-right: 1%;
-    margin-left: 1%;
-  }
-
-  body {
-    color: rgb(138, 146, 173);
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .nav a {
-    display: none;
-  }
-
-  .scroll_down {
-    display: none;
-  }
-
-  .links {
-    display: none;
-  }
-
-  .intro-scroll {
-    display: none;  
-  }
-
-  .title_p{
-    width: 90%;
-  }
-
-  .main_welcome h4,
-  .main_welcome h1{
-    font-size: 40;
-  }
-
-  .main_welcome {
-    margin-top: 20%;
-  }
-
-  .navbar_mobile {
-    display: block;
-}
-
-.mobile_header {
-  display: block;
-}
-
-.added {
-  display: none;
-}
-/* 
-#portrait_image {
-  height: 50%;
-  width: 50%;
-}  */
-
-
-}
-
-@media only screen and (max-width: 320px) {
-  .links {
-    display: none;
-  }
-  html {
-    width: 50%;
-  }
-
-  .main_welcome {
-    margin-top: 150%;
-  }
-
-  .navbar_mobile {
-    font-size: 20px;
-}
-
-.navbar_mobile img {
-  width: 35px;
-  height: 35px;
-}
-.hamburger_btn .fa-bars,
-.hamburger_btn .fa-times-circle {
-    top: 30px;
-    left: 7%;
-    font-size: 35px;
-}
-
-
-.mobile_header {
-  display: block;
-}
-
-}
 
 .contact-link img {
   transform: translate(-50%, -100%) rotate(270deg);
@@ -809,4 +697,168 @@ footer a {
   color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+/* !-------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 1400px) {
+  html {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  body {
+    color: rgb(138, 146, 173);
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .links {
+    display: none;
+  }  
+
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar_mobile {
+    display: block;
+  }
+
+  html {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  body {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav a {
+    display: none;
+  }
+
+  .scroll_down {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .intro-scroll {
+    display: none;  
+  }
+
+  .title_p{
+    width: 90%;
+  }
+
+  .main_welcome h1{
+    font-size: 50px;
+  }
+
+  .main_welcome h1{
+    font-size: 40px;
+  }
+  
+  .main_welcome h4{
+    font-size: 15px;
+  }
+
+
+  .main_welcome {
+    margin-top: 20%;
+  }
+
+  .navbar_mobile {
+    display: block;
+}
+
+.mobile_header {
+  display: block;
+}
+
+}
+
+
+@media only screen and (max-width: 570px) {
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-container-blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  #portrait_image {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #desk {
+    display: none
+  }
+
+
+.tabs__sidebar {
+  width: 40px;
+}
+
+#about p{
+  width: 100%;
+}
+
+
+}
+
+
+@media only screen and (max-width: 460px) {
+.added {
+  display: none;
+} 
+}
+
+@media only screen and (max-width: 320px) {
+  .links {
+    display: none;
+  }
+  html {
+    width: 50%;
+  }
+
+  .main_welcome {
+    margin-top: 150%;
+  }
+
+  .navbar_mobile {
+    font-size: 20px;
+}
+
+.navbar_mobile img {
+  width: 35px;
+  height: 35px;
+}
+.hamburger_btn .fa-bars,
+.hamburger_btn .fa-times-circle {
+    top: 30px;
+    left: 7%;
+    font-size: 35px;
+}
+
+
+.mobile_header {
+  display: block;
+}
+
 }

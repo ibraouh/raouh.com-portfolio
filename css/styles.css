@@ -779,7 +779,9 @@ footer a {
   .navbar_mobile {
     display: block;
 }
-
+  .mobile_header{
+    display: block;
+  }
 }
 
 

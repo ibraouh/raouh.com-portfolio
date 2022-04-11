@@ -41,9 +41,9 @@ body {
   padding-top: 15%;
 }
 
-#about p {
+/* #about p {
   width: 80%;
-}
+} */
 
 .scroll_down {
   height: 50px;
@@ -336,15 +336,12 @@ header {
 
 /* ----------------------------------------------- */
 
-.left {
-  float: left;
-  margin-bottom: 30px;
+.side_by_side {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  grid-gap: 20px;
 }
 
-.right {
-  float: right;
-  margin-left: 20px;
-}
 
 #portrait_image {
   opacity: 0.7;
@@ -352,7 +349,11 @@ header {
   border-radius: 20%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-bottom: 50px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 #portrait_image:hover {

@@ -255,8 +255,25 @@ a {
   text-decoration: none;
 }
 
+/* !---------------------------------------------------------------------------------------- */
+
 .resume_top {
   margin-right: 10px;
+  float: right;
+  /* border: 3px solid rgb(97, 202, 142); */
+}
+
+.top_socials {
+  margin-top: 15px;
+  margin-right: 10px;
+  float: right;
+}
+
+.mobile_header {
+  display: none;
+  position: flex;
+  top: 0px;
+  right: 30px;
 }
 
 /* ----------------------------------------------*/
@@ -450,12 +467,7 @@ footer a {
 
 /* ---------------------------------------------- */
 
-.mobile_header {
-  display: none;
-  position: flex;
-  top: 0px;
-  right: 30px;
-}
+
 
 /* ---------------------------------------------- */
 

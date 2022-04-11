@@ -272,7 +272,7 @@ a {
 .mobile_header {
   display: none;
   position: flex;
-  top: 0px;
+  top: 10px;
   right: 10px;
 }
 

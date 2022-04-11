@@ -342,7 +342,6 @@ header {
   grid-gap: 20px;
 }
 
-
 #portrait_image {
   opacity: 0.7;
   border: 3px solid rgb(97, 202, 142);
@@ -801,6 +800,10 @@ footer a {
 
   #portrait_image {
     display: none;
+  }
+
+  .side_by_side {
+    display: block;
   }
 
   #mobile {

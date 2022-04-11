@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Meta -->
+	<!--+ Meta -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="Personal Portfolio" content="Hi, and welcome to my personal portfolio. I am a math and computer science student at fordham university, interested in Artificial Intelligence and Machine Learning.">
 	<title>Raouh</title>
 
-	<!-- Font API -->
+	<!--+ Font API -->
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Red+Hat+Mono:ital,wght@0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 
-	<!-- CSS -->
+	<!--+ CSS -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Headers -->
+	<!--+ Headers -->
 	<header class="nav">
 		<ul>
 			<a href="#about" class="one">About</a>
@@ -44,13 +44,13 @@
 			</a>
 		</div>
 	</header>
-
+	<!--!----------------------------------------------------------------------------->
 
 
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!--Main welcome screen-->
+	<!--+ Main welcome screen-->
 	<div class="main_welcome">
 		<h4>Hi, my name is</h4>
 		<h1>Ibrahim Raouh.</h1>
@@ -72,7 +72,7 @@
 			</a>
 		</div>
 	
-		<!-- Contact Links -->
+		<!--+ Contact Links -->
 		<div class="links">
 			<div class="contact-link">
 						<a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
@@ -99,7 +99,7 @@
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- About Me -->
+	<!--+ About Me -->
 	<div id="about" class = "section">
 		<div class="left">
 			<h2 class="one_h2">About Me</h2>
@@ -127,8 +127,10 @@
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Experience -->
-	<div id="experience" class = "section">
+	<!--+ Experience -->
+
+	<div class = "section">
+		<div id="experience"></div>
 		<h2 class="two_h2">Work Experience</h2>
 
 		<!-- Tabs Sidebar -->
@@ -141,8 +143,7 @@
 				<button id="mobile" class="tabs__button" data-for-tab="2">2</button>
 				<button id="mobile" class="tabs__button" data-for-tab="3">3</button>
 			</div>
-
-		<!-- Tabs Content -->
+		<!--+ Tabs Content -->
 		<div class="tabs__content tabs__content--active" data-tab="1">
 			<h3 class="experience">IT Specialist <em class="important">@ Fordham IT</em></h3>
 			<h5>September 21 - Present</h5>
@@ -164,17 +165,18 @@
 			</p>
 		</div>			
 	</div>
-	<!--!----------------------------------------------------------------------------->
-
-
-
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Projects -->
+
+
+
+
+	<!--!----------------------------------------------------------------------------->
+	<!--+ Projects -->
 	<div id="projects" class = "section">
 		<h2 class="three_h2">Some things I built</h2>
 		
-		<!-- Rows -->
+		<!--+ Rows -->
 		<div class="row grid-container">
 			<div class="shadow feature-item">
 				<h4>Fordham PD</h4>
@@ -208,7 +210,7 @@
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Other -->
+	<!--+ Other -->
 	<div id="other" class = "section">
 		<h2 class="four_h2">Programming and Software</h2>
 			<p>I enjoy programming to solve some of the common problems I experience daily. I prefer to spend more time making automations instead of tediously doing tasks. This morning, I decided to automate the process of class registration to avoid all the headaches of the slow overloaded server. I ended up saving time, but I also got all the classes I wanted with no problem. <br><br>
@@ -242,7 +244,7 @@
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Blogs -->
+	<!--+ Blogs -->
 	<div id="blog" class = "section">
 		<h2 class="blog_title">Recent Blog Posts</h2>
 		
@@ -275,7 +277,7 @@
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Contact Links -->
+	<!--+ Contact Links -->
 	<div class="links">
 		<div class="contact-link">
 			<a href="https://github.com/ibraouh" target="_blank" rel="noopener noreferrer">
@@ -303,7 +305,7 @@
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Footer -->
+	<!--+ Footer -->
 	<footer>
 		<p>designed and developed by <a href="https://github.com/ibraouh">@ibraouh</a> | Mar 2022 |  <a href="mailto:raouh@fordham.edu">raouh@fordham.edu</a></p>	
 	</footer>
@@ -313,7 +315,7 @@
 
 
 	<!--!----------------------------------------------------------------------------->
-	<!-- Scripts -->
+	<!--+ Scripts -->
 	<script>
 		function setupTabs () {
 			document. querySelectorAll(".tabs__button").forEach(button => {

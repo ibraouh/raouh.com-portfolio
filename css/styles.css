@@ -860,3 +860,52 @@ footer a {
     display: block;
   }
 }
+
+
+
+
+/* --------------------------------------------------------- */
+
+.blog_title {
+  margin-bottom: 50px;
+  width: 100%;
+  padding-top: 10%;
+}
+
+.blog_title h1 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.blog_title p {
+  color: rgb(138, 146, 173);
+}
+
+.blog_description::before {
+  content: "Description: ";
+  font-weight: bold;
+}
+
+.blog_title h4 {
+  margin-left: 0;
+}
+
+.blog_main img {
+  margin-top: 20px;
+}
+
+.blog_main h2 {
+  padding-top: 0;
+}
+
+.blog_main h3 {
+  padding-top: 20px;
+}
+
+.end_of_blog {
+  padding: 5%;
+}
+
+.back_button {
+  margin-bottom: 0;
+}

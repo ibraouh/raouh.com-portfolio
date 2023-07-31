@@ -243,97 +243,6 @@ footer {
 
 /*+ Mobile Section ---------------------------------------------- +*/
 @media screen and (max-width: 320px) {
-  nav.web {
-    display: none;
-  }
-  .separation {
-    height: 10px;
-  }
-
-  header h1 {
-    font-size: 30px;
-  }
-  #about_me h1 {
-    font-size: 35px;
-    margin-top: 10px;
-  }
-
-  #about_me div.right {
-    display: none;
-  }
-  #about_me p {
-    width: 100%;
-    font-size: 12px;
-  }
-
-  #about_me div.left {
-    width: 90%;
-    float: none;
-  }
-
-  #about_me div.left ul {
-    font-size: 12px;
-  }
-
-  /* ----- */
-  #work h1 {
-	font-size: 30px;
-  }
-
-  #work {
-    padding-bottom: 10px;
-  }
-
-  .job .job_date {
-    padding-top: 5px;
-    width: 100%;
-  }
-
-  .job .content {
-    width: 95%;
-  }
-
-  .logo {
-	height: 40px;
-  }
-
-  .mobile {
-	display:block;
-  }
-
-  hr {
-	width: 100%;
-  }
-
-  /* --------------- */
-  .project_list {
-	column-gap: 25px;
-	overflow: scroll;
-  }
-  
-  #projects h1 {
-	font-size: 30px;
-  }
-
-  /*  */
-  #research h1 {
-	font-size: 30px;
-  }
-
-  .split {
-	display: block;
-  }
-  
-  #research h5 {
-	margin-top: 10px;
-  }
-  
-  #research h4 {
-	margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
 	nav.web {
 		display: none;
 	  }
@@ -354,7 +263,7 @@ footer {
 	  }
 	  #about_me p {
 		width: 100%;
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  #about_me div.left {
@@ -363,7 +272,7 @@ footer {
 	  }
 	
 	  #about_me div.left ul {
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  /* ----- */
@@ -421,6 +330,105 @@ footer {
 	  
 	  #research h4 {
 		margin-top: 20px;
+	  }
+
+	  .split div {
+		padding-bottom: 15px;
+	  }
+}
+
+@media screen and (max-width: 480px) {
+	nav.web {
+		display: none;
+	  }
+	  .separation {
+		height: 10px;
+	  }
+	
+	  header h1 {
+		font-size: 30px;
+	  }
+	  #about_me h1 {
+		font-size: 35px;
+		margin-top: 10px;
+	  }
+	
+	  #about_me div.right {
+		display: none;
+	  }
+	  #about_me p {
+		width: 100%;
+		font-size: 15px;
+	  }
+	
+	  #about_me div.left {
+		width: 90%;
+		float: none;
+	  }
+	
+	  #about_me div.left ul {
+		font-size: 15px;
+	  }
+	
+	  /* ----- */
+	  #work h1 {
+		font-size: 30px;
+	  }
+	
+	  #work {
+		padding-bottom: 10px;
+	  }
+	
+	  .job .job_date {
+		padding-top: 5px;
+		width: 100%;
+	  }
+	
+	  .job .content {
+		width: 95%;
+	  }
+	
+	  .logo {
+		height: 40px;
+	  }
+	
+	  .mobile {
+		display:block;
+	  }
+	
+	  hr {
+		width: 100%;
+	  }
+	
+	  /* --------------- */
+	  .project_list {
+		column-gap: 25px;
+		overflow: scroll;
+	  }
+	  
+	  #projects h1 {
+		font-size: 30px;
+	  }
+	
+	  /*  */
+	  #research h1 {
+		font-size: 30px;
+	  }
+	
+	  .split {
+		display: block;
+	  }
+	  
+	  #research h5 {
+		margin-top: 10px;
+	  }
+	  
+	  #research h4 {
+		margin-top: 20px;
+	  }
+
+	  .split div {
+		padding-bottom: 15px;
 	  }
 }
 
@@ -445,7 +453,7 @@ footer {
 	  }
 	  #about_me p {
 		width: 100%;
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  #about_me div.left {
@@ -454,7 +462,7 @@ footer {
 	  }
 	
 	  #about_me div.left ul {
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  /* ----- */
@@ -512,6 +520,10 @@ footer {
 	  
 	  #research h4 {
 		margin-top: 20px;
+	  }
+
+	  .split div {
+		padding-bottom: 15px;
 	  }
 }
 
@@ -536,7 +548,7 @@ footer {
 	  }
 	  #about_me p {
 		width: 100%;
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  #about_me div.left {
@@ -545,7 +557,7 @@ footer {
 	  }
 	
 	  #about_me div.left ul {
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  /* ----- */
@@ -603,6 +615,10 @@ footer {
 	  
 	  #research h4 {
 		margin-top: 20px;
+	  }
+
+	  .split div {
+		padding-bottom: 15px;
 	  }
 }
 
@@ -627,7 +643,7 @@ footer {
 	  }
 	  #about_me p {
 		width: 100%;
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  #about_me div.left {
@@ -636,7 +652,7 @@ footer {
 	  }
 	
 	  #about_me div.left ul {
-		font-size: 12px;
+		font-size: 15px;
 	  }
 	
 	  /* ----- */
@@ -694,6 +710,10 @@ footer {
 	  
 	  #research h4 {
 		margin-top: 20px;
+	  }
+
+	  .split div {
+		padding-bottom: 15px;
 	  }
 }
 

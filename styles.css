@@ -154,10 +154,12 @@ section:after {
 /*+ Work XP Section --------------------------------------------- +*/
 #work h1 {
   margin-bottom: 0;
+  /* padding-top: 0px;
+  margin-top: 0px; */
 }
 
 #work {
-  padding-bottom: 30px;
+  padding-bottom: 45px;
 }
 
 .job {

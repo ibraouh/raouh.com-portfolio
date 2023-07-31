@@ -46,11 +46,16 @@ a {
 /*+ ------------------------------------------------------------- +*/
 
 /*+ Section Backgrounds ----------------------------------------- +*/
-#work,
-#research {
+#work {
   background-color: #2a3419;
   color: #e0ddd7;
 }
+
+#research {
+	background-color: #8a3f24;
+	color: #e0ddd7;
+  }
+
 
 .main_content {
   margin-left: 5%;
@@ -65,6 +70,11 @@ a {
 /*+ ------------------------------------------------------------- +*/
 
 /*+ Header Settings --------------------------------------------- +*/
+header {
+  padding-bottom: 10px;
+  border-bottom: solid 1px gray;
+}
+
 header h1 {
   margin: 0;
   margin-top: 20px;
@@ -171,6 +181,10 @@ section:after {
   float: left;
 }
 
+#work b {
+	color: #d8937a;
+}
+
 /*+ ------------------------------------------------------------- +*/
 
 /*+ Projects Section -------------------------------------------- +*/
@@ -197,17 +211,20 @@ section:after {
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  column-gap: 50px;
 }
 
 #research h5 {
   font-weight: 100;
-
   margin-top: 0px;
 }
 
 #research h4 {
   margin-bottom: 0px;
+}
+
+#research b {
+	color: #2b331d;
 }
 /*+ ------------------------------------------------------------- +*/
 
@@ -243,490 +260,513 @@ footer {
 
 /*+ Mobile Section ---------------------------------------------- +*/
 @media screen and (max-width: 320px) {
-	nav.web {
-		display: none;
-	  }
-	  .separation {
-		height: 10px;
-	  }
-	
-	  header h1 {
-		font-size: 30px;
-	  }
-	  #about_me h1 {
-		font-size: 35px;
-		margin-top: 10px;
-	  }
-	
-	  #about_me div.right {
-		display: none;
-	  }
-	  #about_me p {
-		width: 100%;
-		font-size: 15px;
-	  }
-	
-	  #about_me div.left {
-		width: 90%;
-		float: none;
-	  }
-	
-	  #about_me div.left ul {
-		font-size: 15px;
-	  }
-	
-	  /* ----- */
-	  #work h1 {
-		font-size: 30px;
-	  }
-	
-	  #work {
-		padding-bottom: 10px;
-	  }
-	
-	  .job .job_date {
-		padding-top: 5px;
-		width: 100%;
-	  }
-	
-	  .job .content {
-		width: 95%;
-	  }
-	
-	  .logo {
-		height: 40px;
-	  }
-	
-	  .mobile {
-		display:block;
-	  }
-	
-	  hr {
-		width: 100%;
-	  }
-	
-	  /* --------------- */
-	  .project_list {
-		column-gap: 25px;
-		overflow: scroll;
-	  }
-	  
-	  #projects h1 {
-		font-size: 30px;
-	  }
-	
-	  /*  */
-	  #research h1 {
-		font-size: 30px;
-	  }
-	
-	  .split {
-		display: block;
-	  }
-	  
-	  #research h5 {
-		margin-top: 10px;
-	  }
-	  
-	  #research h4 {
-		margin-top: 20px;
-	  }
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
 
-	  .split div {
-		padding-bottom: 15px;
-	  }
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-	nav.web {
-		display: none;
-	  }
-	  .separation {
-		height: 10px;
-	  }
-	
-	  header h1 {
-		font-size: 30px;
-	  }
-	  #about_me h1 {
-		font-size: 35px;
-		margin-top: 10px;
-	  }
-	
-	  #about_me div.right {
-		display: none;
-	  }
-	  #about_me p {
-		width: 100%;
-		font-size: 15px;
-	  }
-	
-	  #about_me div.left {
-		width: 90%;
-		float: none;
-	  }
-	
-	  #about_me div.left ul {
-		font-size: 15px;
-	  }
-	
-	  /* ----- */
-	  #work h1 {
-		font-size: 30px;
-	  }
-	
-	  #work {
-		padding-bottom: 10px;
-	  }
-	
-	  .job .job_date {
-		padding-top: 5px;
-		width: 100%;
-	  }
-	
-	  .job .content {
-		width: 95%;
-	  }
-	
-	  .logo {
-		height: 40px;
-	  }
-	
-	  .mobile {
-		display:block;
-	  }
-	
-	  hr {
-		width: 100%;
-	  }
-	
-	  /* --------------- */
-	  .project_list {
-		column-gap: 25px;
-		overflow: scroll;
-	  }
-	  
-	  #projects h1 {
-		font-size: 30px;
-	  }
-	
-	  /*  */
-	  #research h1 {
-		font-size: 30px;
-	  }
-	
-	  .split {
-		display: block;
-	  }
-	  
-	  #research h5 {
-		margin-top: 10px;
-	  }
-	  
-	  #research h4 {
-		margin-top: 20px;
-	  }
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
 
-	  .split div {
-		padding-bottom: 15px;
-	  }
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	nav.web {
-		display: none;
-	  }
-	  .separation {
-		height: 10px;
-	  }
-	
-	  header h1 {
-		font-size: 30px;
-	  }
-	  #about_me h1 {
-		font-size: 35px;
-		margin-top: 10px;
-	  }
-	
-	  #about_me div.right {
-		display: none;
-	  }
-	  #about_me p {
-		width: 100%;
-		font-size: 15px;
-	  }
-	
-	  #about_me div.left {
-		width: 90%;
-		float: none;
-	  }
-	
-	  #about_me div.left ul {
-		font-size: 15px;
-	  }
-	
-	  /* ----- */
-	  #work h1 {
-		font-size: 30px;
-	  }
-	
-	  #work {
-		padding-bottom: 10px;
-	  }
-	
-	  .job .job_date {
-		padding-top: 5px;
-		width: 100%;
-	  }
-	
-	  .job .content {
-		width: 95%;
-	  }
-	
-	  .logo {
-		height: 40px;
-	  }
-	
-	  .mobile {
-		display:block;
-	  }
-	
-	  hr {
-		width: 100%;
-	  }
-	
-	  /* --------------- */
-	  .project_list {
-		column-gap: 25px;
-		overflow: scroll;
-	  }
-	  
-	  #projects h1 {
-		font-size: 30px;
-	  }
-	
-	  /*  */
-	  #research h1 {
-		font-size: 30px;
-	  }
-	
-	  .split {
-		display: block;
-	  }
-	  
-	  #research h5 {
-		margin-top: 10px;
-	  }
-	  
-	  #research h4 {
-		margin-top: 20px;
-	  }
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
 
-	  .split div {
-		padding-bottom: 15px;
-	  }
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-	nav.web {
-		display: none;
-	  }
-	  .separation {
-		height: 10px;
-	  }
-	
-	  header h1 {
-		font-size: 30px;
-	  }
-	  #about_me h1 {
-		font-size: 35px;
-		margin-top: 10px;
-	  }
-	
-	  #about_me div.right {
-		display: none;
-	  }
-	  #about_me p {
-		width: 100%;
-		font-size: 15px;
-	  }
-	
-	  #about_me div.left {
-		width: 90%;
-		float: none;
-	  }
-	
-	  #about_me div.left ul {
-		font-size: 15px;
-	  }
-	
-	  /* ----- */
-	  #work h1 {
-		font-size: 30px;
-	  }
-	
-	  #work {
-		padding-bottom: 10px;
-	  }
-	
-	  .job .job_date {
-		padding-top: 5px;
-		width: 100%;
-	  }
-	
-	  .job .content {
-		width: 95%;
-	  }
-	
-	  .logo {
-		height: 40px;
-	  }
-	
-	  .mobile {
-		display:block;
-	  }
-	
-	  hr {
-		width: 100%;
-	  }
-	
-	  /* --------------- */
-	  .project_list {
-		column-gap: 25px;
-		overflow: scroll;
-	  }
-	  
-	  #projects h1 {
-		font-size: 30px;
-	  }
-	
-	  /*  */
-	  #research h1 {
-		font-size: 30px;
-	  }
-	
-	  .split {
-		display: block;
-	  }
-	  
-	  #research h5 {
-		margin-top: 10px;
-	  }
-	  
-	  #research h4 {
-		margin-top: 20px;
-	  }
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
 
-	  .split div {
-		padding-bottom: 15px;
-	  }
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-	nav.web {
-		display: none;
-	  }
-	  .separation {
-		height: 10px;
-	  }
-	
-	  header h1 {
-		font-size: 30px;
-	  }
-	  #about_me h1 {
-		font-size: 35px;
-		margin-top: 10px;
-	  }
-	
-	  #about_me div.right {
-		display: none;
-	  }
-	  #about_me p {
-		width: 100%;
-		font-size: 15px;
-	  }
-	
-	  #about_me div.left {
-		width: 90%;
-		float: none;
-	  }
-	
-	  #about_me div.left ul {
-		font-size: 15px;
-	  }
-	
-	  /* ----- */
-	  #work h1 {
-		font-size: 30px;
-	  }
-	
-	  #work {
-		padding-bottom: 10px;
-	  }
-	
-	  .job .job_date {
-		padding-top: 5px;
-		width: 100%;
-	  }
-	
-	  .job .content {
-		width: 95%;
-	  }
-	
-	  .logo {
-		height: 40px;
-	  }
-	
-	  .mobile {
-		display:block;
-	  }
-	
-	  hr {
-		width: 100%;
-	  }
-	
-	  /* --------------- */
-	  .project_list {
-		column-gap: 25px;
-		overflow: scroll;
-	  }
-	  
-	  #projects h1 {
-		font-size: 30px;
-	  }
-	
-	  /*  */
-	  #research h1 {
-		font-size: 30px;
-	  }
-	
-	  .split {
-		display: block;
-	  }
-	  
-	  #research h5 {
-		margin-top: 10px;
-	  }
-	  
-	  #research h4 {
-		margin-top: 20px;
-	  }
+  nav.web {
+    display: none;
+  }
+  .separation {
+    height: 10px;
+  }
 
-	  .split div {
-		padding-bottom: 15px;
-	  }
+  header {
+    background-color: #8a3f2438;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+
+  header h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  #about_me h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  #about_me div.right {
+    display: none;
+  }
+  #about_me p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #about_me div.left {
+    width: 90%;
+    float: none;
+  }
+
+  #about_me div.left ul {
+    font-size: 15px;
+  }
+
+  /* ----- */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  #work {
+    padding-bottom: 10px;
+  }
+
+  .job .job_date {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .job .content {
+    width: 95%;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  /* --------------- */
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  /*  */
+  #research h1 {
+    font-size: 30px;
+  }
+
+  .split {
+    display: block;
+  }
+
+
+  #research h4 {
+    margin-top: 20px;
+  }
+
+  .split div {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-	.project_list {
-		column-gap: 25px;
-		overflow: scroll;
-	  }
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-	.project_list {
-		column-gap: 25px;
-		overflow: scroll;
-	  }
+  .project_list {
+    column-gap: 25px;
+    overflow: scroll;
+  }
 }

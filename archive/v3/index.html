@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+	<!--+ Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4YLL1JWD3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-E4YLL1JWD3');
+	</script>
+
 	<!--+ Meta -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,56 +28,71 @@
 
 <body>
 	<!--+ Header --------------------------------------------------------------------->
-	<header>
-		<h1 class="left">Abe Raouh | <span id="thin">Software Engineer</span></h1>
+	<header id="top">
+		<h1>Abe Raouh</h1>
 		<!--* Navigation Bar  -->
-		<nav class="web right">
+		<nav class="web">
 			<ul>
-				<li><a href="#work">ABOUT</a></li>
+				<li><a href="#about_me">ABOUT ME</a></li>
+				<li><a href="#work">EXPERIENCE</a></li>
+				<li><a href="#projects">PROJECTS</a></li>
+				<li><a href="#research">RESEARCH</a></li>
 				<li><a href="https://raouh.notion.site/Abe-s-Blog-5333ea289e9847d290c155299fce8d6c?pvs=4"
 						class="blog">BLOG</a></li>
-				<li><a href="mailto:iraouh@fordham.edu">CONTACT</a></li>
-				<li><a class="resume"
-						href="https://drive.google.com/file/d/1JZ4QWna4dWGHsYditAzsORfMpXNSPOBt/view?usp=sharing"
-						target="_blank" rel="noopener noreferrer">RESUME</a></li>
+				<li><a class="resume" href="../content/resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
+	<div class="separation"></div>
 	<!--+ ---------------------------------------------------------------------------->
 
 
 
 	<!--* About Me Section ------------------------------------------------------------>
 	<section id="about_me">
-		<div class="right">
-			<div class="info">
-				<h1>Hi, I'm <br> Abe Raouh</h1>
-				<p>Software Engineer based in New York, NY <br>
-					ML/AI enthusiast</p>
+		<div class="left">
+			<h1>Machine Learning <br>Engineer, <br>Math and CS <br>Major</h1>
 
-				<ul>
-					<li><a href="#work">About Me</a></li>
-					<li><a href="https://raouh.notion.site/Abe-s-Blog-5333ea289e9847d290c155299fce8d6c?pvs=4">Blog</a>
-					</li>
-					<li><a href="mailto:iraouh@fordham.edu">Contact</a></li>
-					<li><a href="https://drive.google.com/file/d/1JZ4QWna4dWGHsYditAzsORfMpXNSPOBt/view?usp=sharing">My
-							Resume</a></li>
-				</ul>
-			</div>
+			<p>
+				Welcome to my Portfolio! I enjoy programming, math, and sometimes design (hence the webstie). I am a
+				Machine Learning and Artificial Intelligence enthousiast, especially after binging all the sci-fi movies
+				that involve evil AI robots when I was a kid.
+			</p>
+			<p>
+				Today, I am a Senior at Fordham University persuing a degree in Computer Science and Math, with
+				electives in Artificial Intelligence. The courses include data structures, computer algorithms, theory
+				of computation, machine learning, and others.
+			</p>
+			<p>
+				I've also been working on my blog, (which will be launched end of April 2022) where I discuss all my
+				personal projects in detail and show the process.
+			</p>
+			<p>
+				Here is a few technologies and languages I've been working with:
+			</p>
+			<ul>
+				<li>C++, C, Python</li>
+				<li>JavaScript (ES6+), HTML</li>
+				<li>Raspberry Pi and its modules</li>
+				<li>AWS</li>
+				<li>GPT-3 Api for ML</li>
+				<li>Docker, Git, etc...</li>
+			</ul>
 		</div>
 
-		<div class="left">
-			<img class="img1" src="../content/img/portrait2.jpeg" width="420px" />
+		<div class="right">
+			<img class="img1" src="../content/img/portrait.png" width="100%" />
 		</div>
 	</section>
-	<!-- <div class="separation"></div> -->
+	<div class="separation"></div>
 	<!--* ---------------------------------------------------------------------------->
 
 
 
 	<!--+ Work Experience Section ---------------------------------------------------->
-	<section id="work" class="main_content">
-		<div>
+	<section id="work">
+		<div class="main_content">
 			<h1>Work Experience</h1>
 			<div class="job">
 				<div class="job_date">
@@ -140,16 +165,17 @@
 			</div>
 		</div>
 	</section>
+	<!-- <div class="separation"></div> -->
 	<!--+ ---------------------------------------------------------------------------->
 
 
 
 	<!--* Projects Section ----------------------------------------------------------->
-	<section id="projects" class="main_content">
-		<div>
+	<section id="projects">
+		<div class="main_content">
 			<h1>Some things I built</h1>
 
-			<div class="project_list" id="first_elem">
+			<div class="project_list">
 				<div>
 					<h4>Fordham PD</h4>
 					<img class="proj_img" src="../content/img/proj1.jpg" height="150px" />
@@ -196,13 +222,14 @@
 			</div>
 		</div>
 	</section>
+	<!-- <div class="separation"></div> -->
 	<!--* ---------------------------------------------------------------------------->
 
 
 
 	<!--+ Research Section ---------------------------------------------------------->
-	<section id="research" class="main_content">
-		<div>
+	<section id="research">
+		<div class="main_content">
 			<h1>Research Experience</h1>
 			<div class="split">
 
@@ -231,9 +258,9 @@
 			</div>
 		</div>
 	</section>
+
 	<!--+ ---------------------------------------------------------------------------->
 
-	
 	<!--* Footer ---------------------------------------------------------------------->
 	<footer>
 		<div id="signature">
@@ -242,7 +269,7 @@
 				<li><a href="../content/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
 			</ul>
 
-			<p>designed and developed by <a href="https://github.com/ibraouh">@ibraouh</a> | Dec 2023, V4 | <a
+			<p>designed and developed by <a href="https://github.com/ibraouh">@ibraouh</a> | July 2023, V3 | <a
 					class="email" href="mailto:raouh@fordham.edu">raouh@fordham.edu</a></p>
 		</div>
 
